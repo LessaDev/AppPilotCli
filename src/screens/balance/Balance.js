@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {FlatList, StatusBar, View} from 'react-native';
-import BalancedArea from '../../components/balanceArea/BalancedArea';
-import ExtractOptions from '../../components/extractPtsArea/extractOptions/ExtractOptions';
-import ExtractDetail from '../../components/extractPtsArea/extractDetail/ExtractDetail';
+import BalancedArea from '../../components/resumeOfPoints/balanceArea/BalancedArea';
+import ExtractOptions from '../../components/resumeOfPoints/extractPtsArea/extractOptions/ExtractOptions';
+import ExtractDetail from '../../components/resumeOfPoints/extractPtsArea/extractDetail/ExtractDetail';
 import BalanceStyle from './BalanceStyle';
 
 export default class Balance extends Component {

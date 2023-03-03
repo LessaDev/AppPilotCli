@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import AuthInput from '../../components/authInput/AuthInput';
+import AuthInput from '../../components/resumeOfPoints/authInput/AuthInput';
 import AuthStyles from './AuthStyles';
 import imgBackground from '../../assets/background-auth.jpg';
 
@@ -36,6 +36,7 @@ export default class Auth extends Component {
   };
   signin = async () => {
     Alert.alert('Logado, Usuario logado');
+    this.props.navigation.navigate('Balance');
   };
 
   render() {
