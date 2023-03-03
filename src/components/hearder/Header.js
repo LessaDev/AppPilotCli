@@ -1,19 +1,15 @@
-import React, {Component} from 'react';
-import {Image, Text, View} from 'react-native';
+import React from 'react';
+import {Text, View} from 'react-native';
 
 import HeaderStyle from './HeaderStyle';
 
-export class HeaderComponet extends Component {
-  render() {
-    return (
-      <View style={HeaderStyle().container}>
-        <View style={HeaderStyle().rowContainer}>
-          <Text style={HeaderStyle().title}>App</Text>
-          <Text style={HeaderStyle().title2}>PILOT</Text>
-        </View>
+export default props => {
+  return (
+    <View style={HeaderStyle().container}>
+      <View style={HeaderStyle().rowContainer}>
+        <Text style={HeaderStyle().title}>{props.text}</Text>
+        <Text style={HeaderStyle().title2}>{props.text2}</Text>
       </View>
-    );
-  }
-}
-
-export default HeaderComponet;
+    </View>
+  );
+};

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {FlatList, View} from 'react-native';
 import FeedStyle from './FeedStyle';
 import {Post} from '../../components/feed/post/Post';
-import HeaderComponet from "../../components/hearder/Header";
+import HeaderComponet from '../../components/hearder/Header';
 export class Feed extends Component {
   state = {
     posts: [
@@ -51,7 +51,7 @@ export class Feed extends Component {
   render() {
     return (
       <View style={FeedStyle().container}>
-        <HeaderComponet />
+        <HeaderComponet text={'APP'} text2={'PILOT'} />
         <FlatList
           data={this.state.posts}
           keyExtractor={item => `${item.id}`}

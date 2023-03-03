@@ -7,6 +7,11 @@ import {createAppContainer} from 'react-navigation';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import Balance from './screens/balance/Balance';
 import Auth from './screens/auth/Auth';
+import {Profile} from './screens/profile/Profile';
+
+
+
+
 
 const MenuRoutes = {
   Feed: {
@@ -31,10 +36,12 @@ const MenuRoutes = {
   },
   Profile: {
     name: 'Profile',
-    screen: Auth,
+    screen: Profile,
     navigationOptions: {
       title: 'Profile',
-      tabBarIcon: ({color}) => <Icon name="user" size={30} color={'#800'} />,
+      tabBarIcon: ({tintColor}) => (
+        <Icon name="user" size={30} color={tintColor} />
+      ),
     },
   },
 };

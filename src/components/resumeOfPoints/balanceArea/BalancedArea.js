@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
 import BalanceAreaStyle from './BalanceAreaStyle';
 import AnExpire from './ anExpire/AnExpire';
 import AlreadyExpired from './alreadyExpired/AlreadyExpired';
